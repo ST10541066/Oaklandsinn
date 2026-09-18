@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="CSS/enquire.css">
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.css">
+</head>
+
+<body>
+<header>
+<a href="index.html">Index</a><br>
+<a href="about.html">About Oaklandsinn</a><br>
+<a href="services.html">Services</a><br>
+<a href="enquiry.html">Enquire?</a><br>
+<a href="contact.html">Contact details</a><br>
+</header>
+    
+<!--So here am creating a form for applicants who want to book a room am using the code we learned in class-->
+  <!--i also put in a code that will allow applicants to restart or submit their aoolications-->  
+<h1>Booking details required</h1><br>
+    <form>
+    <label for="name">Name and Surname</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="phone number">Phone number</label>
+    <input type="number" id="phone" name="phone" required><br>
+
+    <label for="number">Number of guests</label>
+    <input type="number" id="guests" name="guests" required><br> 
+
+    <br><label for="answer">Dinner</label>
+
+    <select id="answer" name="answer">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select><br>
+
+    
+    <br><button type="submit">Submit</button><br>
+    <br><button type="reset">Reset</button>
+
+
+    </form><br>
+    <br>
+     
+</body>
+</html>

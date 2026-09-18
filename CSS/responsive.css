@@ -1,0 +1,37 @@
+/* Mobile */
+2
+@media screen and (max-width: 768px) {
+3
+nav a {
+display: block;
+margin: 10px 0;
+}
+img {
+width: 100%;
+height: auto;
+11
+}
+.container {
+flex-direction: column;
+}
+}
+  
+
+/* Tablet */
+19
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+}
+
+
+/* Desktop */
+27
+@media screen and (min-width: 1025px) {
+.container {
+display: flex;
+justify-content: space-between;
+}
+}
