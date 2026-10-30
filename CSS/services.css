@@ -93,3 +93,45 @@ img {
 display: block;
 margin: auto;
 }
+
+
+/* Image Gallery Lightbox */
+.gallery-image {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}

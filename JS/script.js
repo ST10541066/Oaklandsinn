@@ -75,3 +75,24 @@ if (serviceSearch) {
     }
 });
 }
+
+// Oaklands inn - Image gallery lightbox
+const galleryImages = document.querySelectorAll('.gallery-image');
+const lightbox = document.getElementById('imageLightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxClose = document.getElementById('lightboxClose');
+if (lightbox && lightboxImage && lightboxClose) {
+  galleryImages.forEach(function(image) {
+    image.addEventListener('click', function() {
+        lightbox.style.display = 'flex';
+        lightboxImage.src = image.src;
+    });
+  });
+  closeLightbox.addEventListener('click', function() {
+    imageLightbox.style.display = 'none';
+  });
+  imageLightbox.addEventListener('click', function(event) {
+    if (event.target === imageLightbox) {
+        imageLightbox.style.display = 'none';
+    }
+  });

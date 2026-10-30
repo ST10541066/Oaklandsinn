@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap:
+https://www,oaklandsinn.co.za-URL/sitemap.xml
