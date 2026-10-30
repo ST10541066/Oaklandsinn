@@ -44,5 +44,34 @@ if (bookinform) {
 
     // If all validations pass, submit the form 
     bookinform.submit();
-  });
+  };
+}
+
+
+// Oaklands inn - Services search 
+const serviceSearch = document.getElementById('serviceSearch');
+const serviceCategories = document.querySelectorAll('.services-category');
+const searchMessage = document.getElementById('searchMessage');
+
+if (serviceSearch) {
+  serviceSearch.addEventListener('input', function() {
+    const searchTerm = serviceSearch.value.toLowerCase();
+    let found = 0;
+
+    serviceCategories.forEach(function category) {
+        const categoryText = category.textContent.toLowerCase();
+        if (categoryText.includes(searchTerm)) {
+            category.style.display = 'block';
+            found++;
+        } else {
+            category.style.display = 'none';
+        }
+    });
+
+    if (found === 0) {
+        searchMessage.textContent = 'No services found matching your search.';
+    } else {
+        searchMessage.textContent = '';
+    }
+});
 }
