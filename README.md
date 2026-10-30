@@ -80,3 +80,32 @@ The embedd​ed Google Maps f​eature was imp‌lemented u‍sing documentation
 ‌
 Website images use​d in t​his proje​ct were sour⁠ced from roy‌alty-free​ image platforms and hospital‍ity-r‌el​ated image resources w​here appli⁠ca⁠ble.
 
+Part 3 - Enhancing Functionality and SEO
+JavaScript Functionality
+Added JavaScript validation to the booking enquiry form.
+Added a service search feature.
+Added an interactive image gallery with a lightbox.
+Added a Frequently Asked Questions (FAQ) accordion.
+Implemented dynamic content using JavaScript.
+Added animations and transitions to enhance user experience.
+Improved website interactivity through DOM manipulation techniques.
+Search Engine Optimisation (SEO)
+Added descriptive page titles to all website pages.
+Added meta descriptions to improve search engine visibility.
+Added relevant keywords throughout the website content.
+Used proper heading tags (H1, H2, and H3) to improve content structure.
+Added descriptive alt text and optimised image file names.
+Improved internal linking between website pages.
+Ensured the website is mobile-friendly and responsive.
+Created a robots.txt file.
+Created a sitemap.xml file.
+Added social media links to support off-page SEO.
+Implemented local SEO features, including contact information and map integration.
+Additional Improvements
+Optimised images and code to improve page loading speed.
+Implemented basic security measures through JavaScript form validation.
+Ensured all pages are responsive across desktop, tablet, and mobile devices.
+Deployed the website online for public access and testing.
+Conclusion
+
+Part 3 focused on improving both the functionality and search engine optimisation of the website. JavaScript was used to add interactive features such as form validation, a search function, an image gallery with a lightbox, and an FAQ accordion. SEO techniques were implemented to improve website visibility and usability through page titles, meta descriptions, responsive design, internal linking, and search engine support files such as robots.txt and sitemap.xml. These enhancements resulted in a more user-friendly, professional, and search-engine-optimised website.
