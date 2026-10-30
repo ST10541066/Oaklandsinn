@@ -88,11 +88,24 @@ if (lightbox && lightboxImage && lightboxClose) {
         lightboxImage.src = image.src;
     });
   });
-  closeLightbox.addEventListener('click', function() {
-    imageLightbox.style.display = 'none';
+  lightboxClose.addEventListener('click', function() {
+    lightbox.style.display = 'none';
   });
-  imageLightbox.addEventListener('click', function(event) {
-    if (event.target === imageLightbox) {
-        imageLightbox.style.display = 'none';
+  lightbox.addEventListener('click', function(event) {
+    if (event.target === lightbox) {
+        lightbox.style.display = 'none';
     }
   });
+
+  // Oaklands inn - FAQ accordion
+    const faqItems = document.querySelectorAll('.accordion-button');
+    accordionButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const content = button.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            } 
+        });
+    });
