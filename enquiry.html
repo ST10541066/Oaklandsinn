@@ -20,11 +20,11 @@
 <!--So here am creating a form for applicants who want to book a room am using the code we learned in class-->
   <!--i also put in a code that will allow applicants to restart or submit their aoolications-->  
 <h1>Booking details required</h1><br>
-    <form>
+    <form id="bookingForm" novalidate>
     <label for="name">Name and Surname</label>
     <input type="text" id="name" name="name" required><br>
 
-    <label for="phone number">Phone number</label>
+    <label for="tel">Phone number</label>
     <input type="number" id="phone" name="phone" required><br>
 
     <label for="number">Number of guests</label>
@@ -40,10 +40,10 @@
     
     <br><button type="submit">Submit</button><br>
     <br><button type="reset">Reset</button>
-
-
+<p id="formMessage"></p>
+ 
     </form><br>
-    <br>
-     
+    <script src="JS/script.js"></script>
+    
 </body>
 </html>
