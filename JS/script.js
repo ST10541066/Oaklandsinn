@@ -1,51 +1,43 @@
-Oaklands inn - Booking form validation
+// Oaklandsinn - Booking form validation
+const bookingForm = document.getElementById('bookingForm');
+if (bookingForm) {
+  bookingForm.addEventListener('submit', function(event) {
+    event.preventDefault
 
-const bookinform = document.getElementById('bookingForm');
-if (bookinform) {
-  bookinform.addEventListener('submit', function(event) {
-    event.preventDefault(); 
+const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('phone').value.trim();
+    const checkin = document.getElementById('guests').value;
+    
+    const message = document.getElementById('message').value.trim();
 
-    // Get information entered by the vistor
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const guests = document.getElementById('guests').value;
-     const guests = document.getElementById('formMessage').value;
+    if (name === '' || phone === '' || guests ===  0) {
+        message.textContent = 'Please fill in all required fields.';
+        message.style.color = 'red';
+        return;
+    } 
 
-     // Check that all information is provided
-    if (!name || !phone || !guests) {
-      document.getElementById('formMessage').textContent = 'Please fill in all required fields.';
-      return;
-      message.style.color = 'red';
-      return;
-    }
-
-    // Check that the name contains atleast two characters
     if (name.length < 2) {
-      document.getElementById('formMessage').textContent = 'Name must be at least 2 characters long.';
-      return;
-      message.style.color = 'red';
-      return;
-    }
-
-    // Check phone number
-    if (!/^[0-9+\s()-]{7,20}$/.test(phone)) {
-      document.getElementById('formMessage').textContent = 'Please enter a valid phone number.';
-      return;
-      message.style.color = 'red';
-      return;
-    }
-
-    //check number of guests
-    if (! Number.isInteger(guests) || guests < 1 || guests > 10) {
-        document.getElementById('formMessage').textContent = 'Number of guests must be between 1 and 10.';
+        message.textContent = 'Name must be at least 2 characters long.';
         message.style.color = 'red';
         return;
     }
 
-    // If all validations pass, submit the form 
-    bookinform.submit();
-  };
-}
+    if (!/^\d{10}$/.test(phone)) {
+        message.textContent = 'Please enter a valid 10-digit phone number.';
+        message.style.color = 'red';
+        return;
+    }
+
+    if (! Number.isInterger(guests) // guests <= 1 // guests > 80) {
+        message.textContent = 'Please enter a valid number of guests (1-80).';
+        message.style.color = 'red';
+        return;
+    }
+
+    message.textContent = 'Booking submitted successfully!';
+    message.style.color = 'green';
+    bookingForm.reset();
+  });
 
 
 // Oaklands inn - Services search 
